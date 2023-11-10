@@ -1,0 +1,53 @@
+<form>
+    <label for="voornaam">Voornaam:</label>
+    <input type="text" id="voornaam" name="voornaam" required pattern="[A-Za-z]+" />
+  
+    <label for="achternaam">Achternaam:</label>
+    <input type="text" id="achternaam" name="achternaam" required pattern="[A-Za-z]+" />
+  
+    <label for="geslacht">Geslacht:</label>
+    <input type="radio" id="man" name="geslacht" value="man" checked />
+    <label for="man">Man</label>
+    <input type="radio" id="vrouw" name="geslacht" value="vrouw" />
+    <label for="vrouw">Vrouw</label>
+  
+    <label for="straat">Straat met huisnummer:</label>
+    <input type="text" id="straat" name="straat" required />
+  
+    <label for="postcode">Postcode:</label>
+    <input type="text" id="postcode" name="postcode" required />
+  
+    <label for="stad">Stad:</label>
+    <input type="text" id="stad" name="stad" required />
+  
+    <label for="land">Land:</label>
+    <input type="text" id="land" name="land" required />
+  
+    <label for="bsn">BSN-nummer:</label>
+    <input type="number" id="bsn" name="bsn" required max="999999999" />
+  
+    <label for="vakantieland">Vakantieland:</label>
+    <select id="vakantieland" name="vakantieland" required>
+      <option value="">--Selecteer een land--</option>
+      <option value="Spanje">Spanje</option>
+      <option value="Italië">Italië</option>
+      <option value="Griekenland">Griekenland</option>
+    </select>
+  
+    <label for="vertrekdatum">Datum van vertrek:</label>
+    <input type="date" id="vertrekdatum" name="vertrekdatum" required min="2023-11-10" />
+  
+    <label for="terugkomstdatum">Datum van terugkomst:</label>
+    <input type="date" id="terugkomstdatum" name="terugkomstdatum" required min="2023-11-10" />
+  
+    <label for="aantalreisgenoten">Aantal reisgenoten:</label>
+    <input type="number" id="aantalreisgenoten" name="aantalreisgenoten" required max="4" min="0" />
+  
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required />
+  
+    <label for="wachtwoord">Wachtwoord:</label>
+    <input type="password" id="wachtwoord" name="wachtwoord" required />
+  
+    <input type="submit" value="Boek nu" />
+  </form>
