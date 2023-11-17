@@ -1,0 +1,14 @@
+/* Standaard stijl voor desktop */
+.desktop-element {
+    display: block; /* Zorg ervoor dat het element standaard zichtbaar is op desktop */
+  }
+  
+  /* Media query voor mobiele apparaten */
+  @media only screen and (max-width: 600px) {
+    .desktop-element {
+      display: none; /* Verberg het element op mobiele apparaten */
+    }
+    .mobile-element {
+      display: block; /* Zorg ervoor dat het element zichtbaar is op mobiele apparaten */
+    }
+  }
